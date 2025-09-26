@@ -1,0 +1,106 @@
+body {
+    /* min height set to 100% of view height*/
+    min-height: 100vh;
+    /*flexible display*/
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer,
+main {
+    /*These elements will be 100% of the view width until it hits 800 pixels*/
+    max-width: 1200px;
+    width: 100%;
+    /*Centers the element horizontally maybe need to add vert spacing*/
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*removes the underline from all links*/
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*icons*/
+nav i {
+    font-size: 2rem;
+}
+
+main,
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    gap: 4rem;
+}
+
+section {
+    gap: 1rem;
+}
+
+.intro-header p {
+    padding-top: 0.25rem;
+}
+
+.intro-description {
+    max-width: 800px;
+}
+
+.links-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.color-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.project-description {}
+
+.lessons-learned {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/*Whenever screen size is greater than min width, do these styles*/
+@media (min-width: 640px) {}

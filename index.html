@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--header info about the page
+    http://127.0.0.1:5500/index.html link for index.ntml-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry's Web Portfolio</title>
+    <!--includes style-->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="organization.css" />
+    <!--Allows use of font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--body is where all the visible content on the website is-->
+    <header>
+
+        <!--This is an anchor. Puts link on text-->
+        <a href="/"> Harry Sha </a>
+        <!--List of links to take user to-->
+        <nav>
+            <!--without target, the webpage becomes the link. with target you create a new tab with the new website.-->
+            <a target="_blank" href="https://www.linkedin.com/in/harryshaut/"> <i
+                    class="fa-brands fa-square-linkedin"></i> </a>
+            <a target="_blank" href="https://github.com/HarryBerrySha"> <i class="fa-brands fa-square-github"></i> </a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1> Hi, I'm Harry</h1>
+                <p>Software Developer</p>
+            </div>
+            <!--remember to ur header flex box to position this image well-->
+            <div class="images">
+                <img class="big-img" src="public/penguin logo.jpeg" alt="thumbnail" />
+            </div>
+            <h5 class="intro-description">
+                I am currently pursuing a Bachelor's of Science in Computer Science at the Univeristy of Texas at
+                Austin, go Longhorns. Houston is my hometown and I love to rock climb, play video games, play chess, and
+                learn. It's always fun for me to demystify things. For example, this website was actually my way of
+                demystifying
+                what websites were and how they worked!
+            </h5>
+            <div class="link-container">
+                <a target="_blank" href="mailto:HarrySha2005@gmail.com"> Email</a> |
+                <a target="_blank" href="https://www.linkedin.com/in/harryshaut/"> LinkedIn </a> |
+                <a target="_blank" href="https://github.com/HarryBerrySha"> Github </a>
+            </div>
+
+            <div id="game">
+                <button onclick="">Game?</button>
+            </div>
+            <div style="display:none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display:none;">Do you like it?</p>
+                <input type="color" id="color-square" onchange="" value="#0074ff" />
+                <button onclick="">Revert</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <!--header for each column-->
+                <thead>
+                    <!--a row-->
+                    <tr>
+                        <!--td is an element within a row-->
+                        <th>Area</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Devlopment</td>
+                        <td>Experience with the full stack including HTML, CSS, JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3> My Portfolio </h3>
+                    <p> June 6, 2025</p>
+                    <div class="project-description">
+                        <h4>Description</h4>
+                        <p> Description of project 1</p>
+                    </div>
+                    <div class="lesson-list">
+                        <h5>What I Learned</h5>
+                        <ul>
+                            <li> Lesson 1</li>
+                            <li> Lesson 2</li>
+                            <li> Lesson 3</li>
+                    </div>
+                    <div class="project-links">
+                        <a target="_blank" href="/">Github</a>
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="card">
+                    <h3> project name </h3>
+                    <p> date</p>
+                    <div class="What I Learned">
+                        <h4>Description</h4>
+                        <p> Description of project 1</p>
+                        <h5>What I Learned</h5>
+                        <ul>
+                            <li> Lesson 1</li>
+                            <li> Lesson 2</li>
+                            <li> Lesson 3</li>
+                    </div>
+                    <div class="project-links">
+                        <a target="_blank" href="/">Github</a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <h3> project name </h3>
+                    <p> date</p>
+                    <div class="What I Learned">
+                        <h4>Description</h4>
+                        <p> Description of project 1</p>
+                        <h5>What I Learned</h5>
+                        <ul>
+                            <li> Lesson 1</li>
+                            <li> Lesson 2</li>
+                            <li> Lesson 3</li>
+                    </div>
+                    <div class="project-links">
+                        <a target="_blank" href="/">Github</a>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a> Harry Sha</a>. This website is in this repo <a href="/"> github</a></p>
+    </footer>
+    <!--We can add javascript to add interactivity-->
+    <script>
+        //document is the webpage. we are selecting the color square by its id.
+        const colorSquare = document.getElementById("color-square");
+        const colorDiv = document.querySelector(".color-div");
+        const gameButton = document.querySelector("#game button");
+        const colorDivParagraph = document.querySelector(".color-div p");
+        const revertButton = document.querySelector(".color-div button");
+        let previousColor = colorSquare.value;
+
+        gameButton.onclick = function () {
+            colorDiv.style.display = "block";
+            gameButton.style.display = "none";
+            revertButton.style.display = "block";
+        };
+
+        colorSquare.onchange = function () {
+            document.body.style.backgroundColor = colorSquare.value;
+            colorDivParagraph.style.display = "block";
+        };
+
+        revertButton.onclick = function () {
+            document.body.style.backgroundColor = "#ffffff";
+            colorSquare.value = previousColor;
+            colorDivParagraph.style.display = "none";
+            revertButton.style.display = "none";
+            gameButton.style.display = "block";
+            colorDiv.style.display = "none";
+        };
+    </script>
+</body>
+
+</html>
