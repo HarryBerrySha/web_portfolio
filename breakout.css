@@ -1,0 +1,73 @@
+.breakout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.breakout-container .game-toggle-btn {
+    background: #0f1724;
+    color: #e0f7ff;
+    border: 2px solid #3dd6a7;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.breakout-container .game-toggle-btn:hover {
+    transform: translateY(-2px);
+    background: #12243b;
+}
+
+.breakout-container .breakout-ui {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: #071126;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.breakout-container .breakout-controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.breakout-container .game-btn {
+    background: #1a2d45;
+    color: #dff7ee;
+    border: 1px solid #3dd6a7;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.breakout-container .game-btn.secondary {
+    background: transparent;
+    color: #9aa7bf;
+}
+
+.breakout-container .breakout-canvas-wrapper {
+    width: 100%;
+}
+
+.breakout-container canvas {
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(180deg, #072033 0%, #041226 100%);
+    border-radius: 8px;
+}
+
+.breakout-container .breakout-hud {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: #e0f7ff;
+    font-weight: 600;
+}
