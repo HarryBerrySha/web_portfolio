@@ -141,9 +141,17 @@
                     <div class="lesson-list">
                         <h5>What I Learned</h5>
                         <ul>
-                            <li> Learned basics of ReactJS</li>
-                            <li> Learned how to deploy with a build</li>
-                            <li> Learned how to use Tailwind CSS</li>
+                            <li> Implemented a full-stack todo application with React frontend integrated with
+                                Node/Express REST API and PostgreSQL persistence for added tasks (database stored
+                                locally since public hosting isn't free)</li>
+                            <li> Containerized frontend and backend with multi-stage Dockerfile and created a
+                                docker-compose for local development</li>
+                            <li> Wrote Kubernetes manifests (Namespace, Deployments, Services, StatefulSet, PVC, HPA) to
+                                run the app in k8s and added Liveness and Readiness probes and imagePullPolicy for
+                                robust rolling updates.</li>
+                            <li> Automated CI/CD with GitHub Actions (image building, OIDC-based GHCR login, created
+                                workflows to push said images to GHCR and deployed to temp kind cluster, added smoke
+                                tests to verify API behavior after deploying)</li>
                         </ul>
                     </div>
                     <div class="project-links">
