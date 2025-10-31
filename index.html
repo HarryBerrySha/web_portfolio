@@ -197,14 +197,23 @@
                     <p> July, 2023</p>
                     <div class="project-description">
                         <h4>Description</h4>
-                        <p> Description of project 1</p>
+                        <p> A recreation of the game The Binding of Isaac in Python and Tkinter</p>
                     </div>
                     <div class="lesson-list">
                         <h5>What I did</h5>
                         <ul>
-                            <li> Lesson 1</li>
-                            <li> Lesson 2</li>
-                            <li> Lesson 3</li>
+                            <li> Implemented a procedural dungeon system using randomized depth-first backtracking and
+                                adjacency constraints to generate playable, dead-end-focused levels; integrated
+                                special-room placement (boss/treasure) and deterministic start room flags.</li>
+                            <li> Built a robust event-driven game loop with per-frame updates, AI decision logic,
+                                input-driven state transitions, and rate-limited projectile spawning; ensured clear
+                                separation between model and rendering subsystems.</li>
+                            <li> Engineered efficient per-room entity management and real-time collision/hit detection;
+                                implemented invincibility windows, poison timers, and room-clear logic to maintain
+                                deterministic game state under high-frequency events.</li>
+                            <li> Modularized rendering vs logic (view vs classes), added instrumentable state
+                                transitions, and designed testable map-generation with deterministic seeding suggestions
+                                to facilitate automated validation.</li>
                     </div>
                     <div class="project-links">
                         <a target="_blank" href="https://github.com/HarryBerrySha/Binding-Of-Isaac">Github</a>
